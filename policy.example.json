@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "allowedWorkspaces": ["D:\\Projects\\example-project"],
+  "maxBackupBytes": 33554432,
+  "maxDestructivePerSession": 1
+}

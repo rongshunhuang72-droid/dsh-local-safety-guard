@@ -1,0 +1,15 @@
+node_modules/
+.test-runs/
+policy.json
+records/
+backups/
+quarantine/
+install-backup/
+*.log
+*.zip
+.env
+.env.*
+*.original
+installation.json
+verification.json
+relocation-verification.json

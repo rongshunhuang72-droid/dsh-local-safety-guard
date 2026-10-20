@@ -1,0 +1,19 @@
+# Template only. Install-DSHGuard.ps1 writes a machine-specific dataDirectory.
+- insert:
+    - id: dsh-local-safety-guard
+      name: dsh-local-safety-guard
+
+- id: sandbox-policy
+  config:
+    mode: workspace-write
+
+- id: permission
+  config:
+    defaultPreset: workspace-write
+    presets:
+      read-only:
+        sandbox: read-only
+        approval: ask
+      workspace-write:
+        sandbox: workspace-write
+        approval: ask

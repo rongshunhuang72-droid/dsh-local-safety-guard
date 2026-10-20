@@ -1,0 +1,17 @@
+{
+  "name": "dsh-local-safety-guard",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": { ".": "./index.mjs", "./package.json": "./package.json" },
+  "files": ["index.mjs", "engine.mjs", "policy.mjs", "restore.mjs", "cordis.patch.yml", "AGENTS-safety.md", "README.md", "LICENSE"],
+  "description": "Unofficial strict local tool guard for DeepSeek Harness on Windows",
+  "license": "MIT",
+  "engines": { "node": ">=24" },
+  "scripts": { "test": "node --test test/*.test.mjs" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "compatibility": { "dshReleases": { "0.2.1-rc.2": "compatible" } }
+  }
+}
